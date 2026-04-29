@@ -3,7 +3,7 @@ Crie uma classe Veiculo com: modelo, marca, ano, cor, valor.
 Preencha os dados e exiba o valor do veículo acrescido de 5% do seu valor. 
 Utilize um construtor para setar os dados no momento da instância.
 */
-package atv1Veiculo;;
+package atv1Veiculo;
 
 import javax.swing.JOptionPane;
 
@@ -21,7 +21,7 @@ public class Veiculo {
     }
     
     public static void main(String args[]){
-        Veiculo v = new Veiculo("Monza", "VolksWagen", "1986", "Preto", 100.0);
+        Veiculo v = new Veiculo("Monza", "VolksWagen", "1986", "Preto", 100.00);
         JOptionPane.showMessageDialog(null, v.valor);
     }
 }

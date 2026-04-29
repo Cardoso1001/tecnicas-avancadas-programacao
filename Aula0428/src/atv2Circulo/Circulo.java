@@ -14,40 +14,34 @@ Um método aumentarRaio() que recebe um valor double e o usa como percentual par
 
 Crie uma classe contendo um método main() para testar a funcionalidade da classe Circulo.
  */
-
 package atv2Circulo;
-
 
 public class Circulo {
     private double raio;
 
-    public void setRaio(double raio) {
+    // Construtor
+    public Circulo(double raio) {
         this.raio = raio;
     }
 
     public double getRaio() {
         return raio;
     }
-    
-    public Circulo(double raio){
-        setRaio(raio);
+
+    public void setRaio(double raio) {
+        this.raio = raio;
     }
-    
-    public double getArea(double raio){
-        double area = raio * raio * 3.14;
-        
-        return area;
+
+    public double getArea() {
+        return Math.PI * raio * raio;  // Utilizando Math.PI para maior precisão
     }
-    
-    public double getCircunferencia(double raio){
-        double circun = raio * 3.14 * 2;
-        
-        return circun;
+
+    public double getCircunferencia() {
+        return 2 * Math.PI * raio;  // Utilizando Math.PI para maior precisão
     }
-    
-    public void aumentarRaio(double percentual){
-        this.raio += this.raio * percentual/100;
+
+    // Método para aumentar o raio com base em um percentual
+    public void aumentarRaio(double percentual) {
+        this.raio = this.raio + (this.raio * percentual / 100);
     }
-    
-    
 }
