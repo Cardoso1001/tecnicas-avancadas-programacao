@@ -20,4 +20,11 @@ public class Inquilino extends Pessoa {
         this.profissao = profissao;
     }
     
+    public Inquilino (String n, String cpf, String p, double r) {
+        super.setNome(n);
+        super.setCpf(cpf);
+        this.profissao = p;
+        this.renda = r;
+    }
+    
 }

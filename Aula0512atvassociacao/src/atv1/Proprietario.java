@@ -11,4 +11,11 @@ public class Proprietario extends Pessoa {
         this.conjuge = conjuge;
     }
     
+    public Proprietario (String n, String cpf, String c) {
+        super.setNome(n);
+        super.setCpf(cpf);
+        this.conjuge = c;
+        
+    }
+    
 }
